@@ -6,6 +6,4 @@ import org.springframework.stereotype.Service;
 
 public interface ILogService {
     Integer insert(Log log);
-
-   Page<Log> findLogPage(Page<Log> page);
 }

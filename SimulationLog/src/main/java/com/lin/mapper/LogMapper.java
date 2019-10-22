@@ -7,8 +7,10 @@ import com.lin.entity.Log;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Mapper
 @Repository
 public interface LogMapper extends BaseMapper<Log> {
-    Page<Log> findLogPage(Page<Log> page);
+    List<Log> findAll();
 }

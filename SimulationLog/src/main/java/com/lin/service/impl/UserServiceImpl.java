@@ -105,13 +105,13 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public void deleteById(Long id) {
-        userMapper.deleteById(id);
+    public Integer deleteById(Long id) {
+        return userMapper.deleteById(id);
     }
 
     @Override
-    public void update(User user) {
-        userMapper.updateById(user);
+    public Integer update(User user) {
+        return  userMapper.updateById(user);
     }
 
     @Override

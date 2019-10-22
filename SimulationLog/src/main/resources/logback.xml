@@ -177,9 +177,7 @@
     </appender>
 
     <logger name="org.springframework.web" level="info"/>
-    <logger name="org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor" level="INFO"/>
     <logger name="com.lin" level="debug"/>
-
 
     <root level="info">
         <appender-ref ref="CONSOLE" />

@@ -12,19 +12,19 @@
         <result column="ip_info" property="ipInfo"/>
         <result column="cost_time" property="costTime"/>
         <result column="del_flag" property="delFlag"/>
-        <result column="updated_by" property="updatedBy"/>
+        <result column="update_by" property="updateBy"/>
         <result column="update_time" property="updateTime"/>
         <result column="create_by" property="createBy"/>
         <result column="create_time" property="createTime"/>
     </resultMap>
     <sql id="all_columns">
         id, name, log_type, request_type, request_param, ip, ip_info,
-        cost_time, del_flag, updated_by, update_time, create_by, create_time
+        cost_time, del_flag, update_by, update_time, create_by, create_time
     </sql>
     <sql id="default_db">
         `log`
     </sql>
-    <select id="findLogPage">
+    <select id="findAll">
        SELECT
        <include refid="all_columns"/>
        FROM

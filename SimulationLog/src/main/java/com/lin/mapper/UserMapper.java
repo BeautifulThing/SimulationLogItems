@@ -12,6 +12,5 @@ import java.util.List;
 @Repository
 public interface UserMapper extends BaseMapper<User> {
     User findByUsername(String username);
-
-    Page<User> findUserPage(Page page);
+    Page<User> findUserPage(Page<User> page);
 }
