@@ -47,6 +47,7 @@ public class SystemLogAspect {
      */
     @Pointcut("@annotation(com.lin.common.annotation.SystemLog)")
     public void controllerAspect() {
+        System.out.println("controllerAspect....");
     }
 
     /**
